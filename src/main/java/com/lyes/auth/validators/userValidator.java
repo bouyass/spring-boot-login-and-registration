@@ -8,7 +8,7 @@ import org.springframework.validation.Validator;
 import com.lyes.auth.model.User;
 import com.lyes.auth.services.UserService;
 
-public class userValidator implements Validator {
+public class UserValidator implements Validator {
 	
 	@Autowired 
 	private UserService userService;
