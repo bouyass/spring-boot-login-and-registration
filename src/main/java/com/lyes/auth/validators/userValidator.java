@@ -1,6 +1,7 @@
 package com.lyes.auth.validators;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
@@ -8,6 +9,7 @@ import org.springframework.validation.Validator;
 import com.lyes.auth.model.User;
 import com.lyes.auth.services.UserService;
 
+@Service
 public class UserValidator implements Validator {
 	
 	@Autowired 

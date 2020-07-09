@@ -4,11 +4,13 @@ import java.util.HashSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import com.lyes.auth.model.User;
 import com.lyes.auth.repositories.RoleRepository;
 import com.lyes.auth.repositories.UserRepository;
 
+@Service
 public class UserServiceImpl implements UserService {
 
 	@Autowired 
@@ -30,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User findUsername(String username) {
-		return userRepository.findByUserName(username);
+		return userRepository.findByUsername(username);
 	}
 
 }
